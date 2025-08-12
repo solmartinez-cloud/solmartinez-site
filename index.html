@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sol Martinez | Música versátil</title>
+  <meta name="description" content="Sol Martinez: intérprete de música versátil en Hidalgo y CDMX. Eventos privados, precios especiales para restaurantes." />
+  <link rel="preload" href="assets/IMG_4252.JPG" as="image">
+  <style>
+    :root {
+      --bg: #0b0b0b;
+      --fg: #ffffff;
+      --muted: rgba(255,255,255,.75);
+      --card: rgba(255,255,255,.06);
+      --border: rgba(255,255,255,.14);
+      --red: #e11d48;
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; background: var(--bg); color: var(--fg);}
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+    header { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(6px); background: rgba(0,0,0,.6); border-bottom: 1px solid var(--border);}
+    header .bar { display:flex; align-items:center; justify-content:space-between; padding:12px 0;}
+    nav a { margin-left: 16px; color: var(--muted);}
+    nav a:hover { color: var(--fg);}
+    .btn { display:inline-flex; align-items:center; gap:8px; background: var(--red); color: #fff; padding: 10px 16px; border-radius: 14px; font-weight: 600; }
+    .btn.outline { background: transparent; border:1px solid var(--border); color:#fff; }
+    .hero { position:relative; }
+    .hero img.bg { width:100%; height: 56vh; object-fit: cover; filter: saturate(.9) brightness(.85); display:block; }
+    .hero .shade { position:absolute; inset:0; background: radial-gradient(1000px 300px at 80% -20%, rgba(225,29,72,.35), transparent), linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.75)); }
+    .hero .copy { position:absolute; inset:0; display:grid; place-items:center; text-align:left; }
+    .hero .inner { width: min(100%, 1100px); padding: 0 16px; }
+    .kicker { text-transform:uppercase; letter-spacing:.18em; color: var(--muted); font-size: 12px; }
+    h1 { font-size: clamp(36px, 6vw, 64px); margin: 8px 0 16px; }
+    p.lead { max-width: 720px; color: var(--muted); font-size: 18px; }
+    section { padding: 64px 0; border-top:1px solid var(--border);}
+    h2 { font-size: 28px; margin: 0 0 16px; }
+    .grid { display:grid; gap: 20px; }
+    .grid-2 { grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .card { background: var(--card); border:1px solid var(--border); border-radius: 20px; padding: 20px; }
+    ul.clean { list-style:none; padding:0; margin:0; }
+    .price { color: #fca5a5; font-weight:700; }
+    .gallery { display:grid; grid-template-columns: repeat(2,1fr); gap:10px; }
+    @media (min-width: 768px) { .gallery { grid-template-columns: repeat(4,1fr); } }
+    .gallery img { width:100%; height: 170px; object-fit: cover; border-radius:14px; border:1px solid var(--border);}
+    footer { border-top:1px solid var(--border); padding: 28px 0; color: var(--muted);}
+    .chips { display:flex; flex-wrap:wrap; gap:8px; }
+    .chip { border:1px solid var(--border); border-radius: 999px; padding:6px 10px; font-size: 12px; color: var(--muted);}
+    .stack { display:flex; gap:10px; flex-wrap:wrap; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container bar">
+      <strong>Sol Martinez</strong>
+      <nav>
+        <a href="#bio">Bio</a>
+        <a href="#musica">Música</a>
+        <a href="#galeria">Galería</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn" href="https://wa.me/527731318652?text=Hola%20Sol,%20me%20gustar%C3%ADa%20cotizar%20un%20evento.%20%C2%BFTienes%20disponibilidad%3F" target="_blank" rel="noreferrer">Reservar</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio" aria-label="Inicio">
+    <img class="bg" src="assets/IMG_4252.JPG" alt="Sol Martinez - portada" />
+    <div class="shade"></div>
+    <div class="copy">
+      <div class="inner">
+        <div class="kicker">Música versátil · Hidalgo · CDMX</div>
+        <h1>Sol Martinez</h1>
+        <p class="lead">Shows en vivo para restaurantes y eventos privados. Repertorio versátil e interpretación de canciones del compositor hidalguense Sergio Pedraza Reyes.</p>
+        <div class="stack" style="margin-top:16px">
+          <a class="btn" href="https://wa.me/527731318652?text=Hola%20Sol,%20me%20gustar%C3%ADa%20cotizar%20un%20evento.%20%C2%BFTienes%20disponibilidad%3F" target="_blank" rel="noreferrer">Reservar ahora</a>
+          <a class="btn outline" href="#musica">Ver y escuchar</a>
+        </div>
+        <div class="chips" style="margin-top:14px">
+          <span class="chip">Tula de Allende</span>
+          <span class="chip">Atitalaquia</span>
+          <span class="chip">Tlaxcoapan</span>
+          <span class="chip">Atotonilco</span>
+          <span class="chip">Pachuca</span>
+          <span class="chip">CDMX y alrededores</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bio">
+    <div class="container grid grid-2">
+      <div>
+        <h2>Biografía</h2>
+        <p style="color:var(--muted); line-height:1.7">
+          Nacida en Tula de Allende, Hidalgo, México. Intérprete de música versátil.
+          Actualmente el compositor hidalguense Sergio Pedraza Reyes me permite interpretar sus canciones.
+          Tal vez mi trayectoria sea corta, pero he logrado presentarme en la Feria de Tula (2022) y la Feria de Batha, Conejos, Hidalgo (2024).
+        </p>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Servicios y precios</h3>
+        <ul class="clean">
+          <li style="display:flex; justify-content:space-between; margin-bottom:8px">
+            <span>Eventos privados (2 horas mínimo)</span><span class="price">$2,500 MXN</span>
+          </li>
+          <li style="display:flex; justify-content:space-between; margin-bottom:8px">
+            <span>Hora adicional</span><span class="price">$1,000 MXN</span>
+          </li>
+          <li style="display:flex; justify-content:space-between;">
+            <span>Precio especial a restaurantes</span><span class="price">Consultar</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="musica">
+    <div class="container grid grid-2">
+      <div>
+        <h2>Música y videos</h2>
+        <div class="card" style="overflow:hidden">
+          <div style="position:relative; padding-bottom:56.25%; height:0;">
+            <iframe src="https://www.youtube.com/embed/Ge3maHUcWJo" title="Video de YouTube"
+              style="position:absolute; inset:0; width:100%; height:100%; border:0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <a href="https://www.youtube.com/@solmartinezs" target="_blank" rel="noreferrer" style="display:inline-block; margin-top:10px; color:var(--muted); text-decoration:underline">Ver canal de YouTube</a>
+        </div>
+      </div>
+      <div>
+        <h2 style="opacity:0">.</h2>
+        <div class="card" style="overflow:hidden">
+          <iframe src="https://open.spotify.com/embed/track/4ziPAb8FFPKqLfWCLLdRef" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="Spotify player"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <div class="container">
+      <h2>Galería</h2>
+      <p style="color:var(--muted); margin-top:-6px">Tus mejores momentos en vivo y sesiones.</p>
+      <div class="gallery">
+        <img src="assets/IMG_4252.JPG" alt="Foto - Sol Martinez"/><img src="assets/IMG_6719.JPG" alt="Foto - Sol Martinez"/><img src="assets/facebook_1743980986390_7314786427140554780.jpg" alt="Foto - Sol Martinez"/><img src="assets/IMG_6796.jpg" alt="Foto - Sol Martinez"/><img src="assets/SIN_COBARDIA.JPG" alt="Foto - Sol Martinez"/><img src="assets/FB_IMG_1736361052559.jpg" alt="Foto - Sol Martinez"/><img src="assets/facebook_1743981106762_7314786932020337114.jpg" alt="Foto - Sol Martinez"/><img src="assets/IMG_4248.JPG" alt="Foto - Sol Martinez"/>
+      </div>
+    </div>
+  </section>
+
+  <section id="agenda">
+    <div class="container grid grid-2">
+      <div>
+        <h2>Agenda y reservas</h2>
+        <p style="color:var(--muted)">Envíame un WhatsApp con la fecha, lugar, horario, tipo de evento y duración. Te respondo con disponibilidad y cotización.</p>
+        <a class="btn" href="https://wa.me/527731318652?text=Hola%20Sol,%20me%20gustar%C3%ADa%20cotizar%20un%20evento.%20%C2%BFTienes%20disponibilidad%3F" target="_blank" rel="noreferrer">Reservar por WhatsApp</a>
+        <p style="margin-top:12px; font-size:14px; color:var(--muted)">Precios: paquete 2 horas desde $2,500 MXN; hora adicional $1,000 MXN. Precio especial a restaurantes.</p>
+      </div>
+      <div class="card">
+        <form onsubmit="event.preventDefault()">
+          <label>Nombre<br><input style="width:100%; padding:10px; border-radius:10px; border:1px solid var(--border); background:rgba(255,255,255,.04); color:#fff" placeholder="Tu nombre"></label><br><br>
+          <label>Fecha del evento<br><input type="date" style="width:100%; padding:10px; border-radius:10px; border:1px solid var(--border); background:rgba(255,255,255,.04); color:#fff"></label><br><br>
+          <label>Ciudad / Lugar<br><input style="width:100%; padding:10px; border-radius:10px; border:1px solid var(--border); background:rgba(255,255,255,.04); color:#fff" placeholder="Ej. Tula, Hidalgo"></label><br><br>
+          <label>Duración estimada<br>
+            <select style="width:100%; padding:10px; border-radius:10px; border:1px solid var(--border); background:rgba(255,255,255,.04); color:#fff">
+              <option>2 horas</option><option>3 horas</option><option>4 horas</option>
+            </select>
+          </label><br><br>
+          <label>Mensaje<br><textarea rows="4" style="width:100%; padding:10px; border-radius:10px; border:1px solid var(--border); background:rgba(255,255,255,.04); color:#fff" placeholder="Cuéntame de tu evento"></textarea></label><br><br>
+          <button class="btn" type="button" onclick="window.open('https://wa.me/527731318652?text=Hola%20Sol,%20me%20gustar%C3%ADa%20cotizar%20un%20evento.%20%C2%BFTienes%20disponibilidad%3F','_blank')">Enviar por WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container grid grid-2">
+      <div>
+        <h2>Contacto</h2>
+        <div class="card">
+          <p>Contacto solo por WhatsApp</p>
+          <p><a class="btn" href="https://wa.me/527731318652?text=Hola%20Sol,%20me%20gustar%C3%ADa%20cotizar%20un%20evento.%20%C2%BFTienes%20disponibilidad%3F" target="_blank" rel="noreferrer">+52 773 131 8652</a></p>
+          <p style="margin-top:8px; color:var(--muted)">Correo: marisol.mar.sanchez@gmail.com</p>
+          <div style="margin-top:10px" class="stack">
+            <a class="btn outline" href="https://www.youtube.com/@solmartinezs" target="_blank" rel="noreferrer">YouTube</a>
+            <a class="btn outline" href="https://www.facebook.com/marisol.martinez.689571" target="_blank" rel="noreferrer">Facebook</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Cobertura</h3>
+        <p style="color:var(--muted)">Tula de Allende · Atitalaquia · Tlaxcoapan · Atotonilco · Pachuca · CDMX y alrededores</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px">
+      <span>© 2025 Sol Martinez. Todos los derechos reservados.</span>
+      <div class="stack"><a href="#inicio">Inicio</a><a href="#contacto">Contacto</a></div>
+    </div>
+  </footer>
+</body>
+</html>
